@@ -1,3 +1,8 @@
+/**
+ * An important note here: that hre.ethers is auto-imported when we run it using hardhat. 
+ * You don’t need to import anything!
+ */
+
 async function main() {
   const keyboardsContractFactory = await hre.ethers.getContractFactory(
     "Keyboards"
@@ -21,8 +26,8 @@ main()
 
   // Output
   /**
-   * npx hardhat run scripts/start.js                           1 ↵
-Compiled 1 Solidity file successfully
-Contract deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
-We got the Keyboards: []
+   * npx hardhat run scripts/start.js
+   *   Compiled 1 Solidity file successfully
+   * Contract deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+   * We got the Keyboards: []
    */
